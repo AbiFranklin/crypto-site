@@ -1,0 +1,104 @@
+.row-wrapper {
+  @apply flex items-center justify-center;
+}
+
+.bet-input {
+  @apply px-4 py-3 bg-cyan-blue rounded w-full shadow-inner;
+}
+
+.bet-input:focus {
+  outline-width: 1px;
+  outline-color: #2d3748;
+}
+
+.btn-bet {
+  @apply bg-gray-800 text-sm text-gray-400 font-medium ml-1 py-2 px-4 rounded transition duration-200 ease-in-out;
+}
+
+.btn-bet:hover {
+  @apply shadow;
+  transform: translateY(-1px)
+}
+
+.btn-bet:active {
+  @apply shadow-none;
+  transform: translateY(0.75px)
+}
+
+.btn-bet-clear {
+  @apply text-sm text-gray-400 font-medium py-2 px-6 rounded transition duration-200 ease-in-out;
+}
+
+.btn-bet-clear:hover {
+  @apply bg-blue-highlight;
+}
+
+.btn-bet-wrapper {
+  @apply absolute;
+  top: 6px;
+  right: 6px;
+}
+
+.placebet-win {
+  @apply text-sm font-bold flex flex-1 items-center justify-center;
+}
+
+.placebet {
+  @apply relative rounded w-1/3 grid;
+}
+
+.current-bets {
+  @apply relative rounded p-1 w-1/3 text-sm font-medium shadow;
+  max-height: 24.2rem;
+  overflow: hidden;
+}
+
+.current-bets__amount {
+  @apply flex flex-1;
+}
+
+.bets-wrapper {
+  @apply flex justify-between;
+}
+
+.btn-placebet {
+  @apply text-sm text-gray-100 py-1 px-3 font-bold rounded-lg transition duration-200 ease-in-out;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  right: 6px;
+  margin: 2px;
+}
+
+.btn-placebet:hover {
+  @apply shadow;
+  transform: translateY(-1px)
+}
+
+.btn-placebet:active {
+  @apply shadow-none;
+  transform: translateY(0.75px)
+}
+
+.btn-placebet-red {
+  @apply bg-red-600;
+}
+
+.btn-placebet-green {
+  @apply bg-bet-green;
+}
+
+.btn-placebet-black {
+  @apply bg-bet-black;
+}
+
+.current-bets__amount-first {
+  @apply text-gray-100 text-sm leading-none py-1;
+}
+
+.current-bets__amount-remainder {
+  @apply text-gray-100 text-xs;
+}
+
+.current-bets-inner,
+.current-bets-header {
+  @apply flex items-center justify-center;
+}

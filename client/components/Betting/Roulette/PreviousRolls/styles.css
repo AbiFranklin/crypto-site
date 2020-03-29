@@ -1,0 +1,33 @@
+.previous-roll-wrapper {
+  @apply flex justify-center items-center text-sm text-gray-400;
+}
+
+.last-rolls {
+  @apply flex justify-center items-center text-sm text-gray-400;
+}
+
+.previous-roll {
+  @apply flex justify-center items-center mx-1 my-2 px-3 py-2 rounded-full pointer-events-none;
+  height: 35px;
+  width: 35px;
+  color: white;
+}
+
+.last-hundred-roll {
+  @apply flex justify-center items-center mx-1 my-2 rounded-full pointer-events-none;
+  height: 20px;
+  width: 20px;
+  color: white;
+}
+
+.roll-red {
+  background: #f95146;
+}
+
+.roll-black {
+  background: #2d3035;
+}
+
+.roll-green {
+  background: #00c74d;
+}

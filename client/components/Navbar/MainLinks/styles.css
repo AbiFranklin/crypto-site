@@ -1,0 +1,8 @@
+.nav-button {
+  @apply mx-4 py-2 uppercase rounded-md text-sm font-bold leading-5 text-gray-500 transition duration-200 ease-in-out;
+}
+
+.nav-button-active {
+  @apply text-gray-100 no-underline rounded-none border-solid border-yellow-400;
+  border-bottom-width: 0.15rem;
+}

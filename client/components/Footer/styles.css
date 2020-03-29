@@ -1,0 +1,7 @@
+.footer-link-text {
+  @apply font-medium text-gray-500 transition duration-150 ease-in-out;
+}
+
+.footer-link-text:hover {
+  @apply text-white;
+}

@@ -1,0 +1,27 @@
+.bet-wrapper {
+  @apply flex bg-user-bet rounded text-sm p-2 mt-1;
+}
+
+.user-avatar {
+  @apply h-6 mr-2 rounded-full;
+}
+
+.user-level {
+  @apply inline-block bg-gray-400 text-gray-800 px-2 rounded uppercase font-bold tracking-wide;
+}
+
+.user-username {
+  @apply font-bold ml-2 leading-6 truncate;
+}
+
+.user-bet {
+  @apply flex items-center justify-center;
+}
+
+.user-bet--amount-first {
+  @apply text-gray-100 text-sm leading-none py-1;
+}
+
+.user-bet--amount-last {
+  @apply text-gray-100 text-xs;
+}

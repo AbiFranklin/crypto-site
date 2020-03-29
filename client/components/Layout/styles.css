@@ -1,0 +1,4 @@
+.content-wrapper {
+  @apply mt-6;
+  min-height: calc(100vh - 72px);
+}

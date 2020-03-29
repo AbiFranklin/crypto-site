@@ -1,0 +1,7 @@
+.progress-bar-wrapper {
+  @apply rounded-full shadow-inner bg-gray-800 
+}
+
+.progress-bar {
+  @apply py-1 text-sm leading-none font-black text-center bg-yellow-400 rounded-full transition-all duration-700 ease-in-out
+}

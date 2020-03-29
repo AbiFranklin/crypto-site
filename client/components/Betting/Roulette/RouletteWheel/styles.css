@@ -1,0 +1,85 @@
+.roulette-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.roulette-wrapper .selector {
+  width: 3px;
+  background: grey;
+  left: 50%;
+  height: 100%;
+  transform: translate(-50%, 0%);
+  position: absolute;
+  z-index: 2;
+}
+
+.roulette-wrapper .wheel {
+  display: flex;
+}
+
+.roulette-wrapper .wheel .row {
+  display: flex;
+}
+
+.roulette-wrapper .wheel .row .card {
+  @apply flex justify-center items-center text-white font-semibold;
+  height: 75px;
+  width: 75px;
+  margin: 2px;
+  border-radius: 10px;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  font-size: 1.5em;
+}
+
+
+.card.red {
+  background: #f95146;
+}
+
+.card.black {
+  background: #2d3035;
+}
+
+.card.green {
+  background: #00c74d;
+}
+
+.roulette-countdown {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  margin: auto;
+  transform: translateY(47px);
+  text-shadow: 0 1px 4px #00000050;
+  font-size: .75em;
+  color: #eee;
+}
+
+.game-holder {
+  @apply relative rounded py-1 h-24 w-full bg-cyan-blue flex justify-center items-center rounded-lg;
+}
+
+.game-holder::before,
+.game-holder::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  height: 110%;
+  width: 20px;
+  z-index: 2;
+}
+
+.game-holder::before {
+  background: linear-gradient(270deg,rgba(20,26,29,0) 0%, #1c2535 100%);
+  left: 0;
+}
+
+.game-holder::after {
+  background: linear-gradient(270deg,rgba(20,26,29,0) 0%, #1c2535 100%);
+  transform: rotate(180deg);
+  right: 0;
+}

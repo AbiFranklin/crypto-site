@@ -1,0 +1,25 @@
+.balance-full {
+  @apply text-gray-100 text-sm leading-none py-1;
+}
+
+.balance-remainder {
+  @apply text-gray-100 text-xs;
+}
+
+.div-inset {
+  @apply ml-4 text-sm text-gray-400 font-bold py-2 px-6 rounded transition duration-150 ease-in-out;
+}
+
+.user-wrapper {
+  @apply ml-4 flex bg-gray-800 text-sm text-gray-400 font-medium py-2 px-6 rounded transition duration-200 ease-in-out;
+}
+
+.user-wrapper:hover {
+  @apply shadow;
+  transform: translateY(-1px)
+}
+
+.user-wrapper:active {
+  @apply shadow-none;
+  transform: translateY(0.75px)
+}

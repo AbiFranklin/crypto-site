@@ -1,0 +1,70 @@
+@import '../components/Navbar/ButtonsAndBalance/styles.css';
+@import '../components/Navbar/MainLinks/styles.css';
+@import '../components/Sidebar/User/styles.css';
+@import '../components/Navbar/MobileMenu/styles.css';
+@import '../components/Betting/Roulette/PlaceBets/styles.css';
+@import '../components/Betting/Roulette/SingleBet/styles.css';
+@import '../components/Betting/Roulette/RouletteWheel/styles.css';
+@import '../components/Betting/Roulette/PreviousRolls/styles.css';
+@import '../components/Layout/styles.css';
+@import '../components/Footer/styles.css';
+@import '../components/Navbar/styles.css';
+/* @import '../components/Betting/Roulette/styles.css'; */
+
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/* purgecss end ignore */
+@tailwind utilities;
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100vh;
+  @apply bg-blue-highlight text-gray-300;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button:focus {
+  outline: 0
+}
+
+.flex-justify-center {
+  @apply flex justify-center items-center;
+}
+
+.flex-center {
+  @apply flex items-center;
+}
+
+.alert-progressbar {
+  background-color: rgba(0, 0, 0, 0.15)
+}
+
+.btn-yellow {
+  @apply text-sm bg-yellow-400 border-b-2 border-yellow-600 text-black-111 font-bold py-2 px-8 rounded transition duration-200 ease-in-out;
+}
+
+.btn-yellow:hover {
+  @apply shadow-lg;
+  transform: translateY(-1px)
+}
+
+.btn-yellow:active {
+  @apply shadow-none;
+  transform: translateY(0.75px)
+}
+
+.btn-second {
+  @apply text-sm text-gray-400 font-bold py-2 px-6 rounded transition duration-200 ease-in-out;
+}
